@@ -40,8 +40,8 @@ export default function AboutUs() {
           className="max-w-4xl mx-auto text-center mb-16"
         >
           <p className="text-lg text-slate-700 leading-relaxed">
-            Experience Bali's best with Your Bali Vacation. Affordable car hire
-            and personalized tours to explore Bali's stunning destinations.
+            Experience Bali's best with Rama Bali Tour. Affordable car hire and
+            personalized tours to explore Bali's stunning destinations.
             <br />
             Book now for an unforgettable journey!
           </p>

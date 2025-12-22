@@ -3,7 +3,7 @@ export const WHATSAPP_NUMBER = "6287842216006"; // Replace with actual WhatsApp 
 
 // WhatsApp Message Templates
 export const WHATSAPP_MESSAGES = {
-  general: "Hi! I would like to know more about Your Bali Vacation services.",
+  general: "Hi! I would like to know more about Rama Bali Tour services.",
   bookDriver: "Hi! I would like to book a personal driver in Bali.",
   carRental: (carType: string) =>
     `Hi! I would like to inquire about renting a ${carType}.`,

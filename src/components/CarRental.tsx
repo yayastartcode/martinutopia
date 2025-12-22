@@ -115,7 +115,7 @@ export default function CarRental() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
-            Welcome to Your Bali Vacation,
+            Welcome to Rama Bali Tour,
           </h2>
           <p className="text-lg text-slate-700 leading-relaxed">
             your trusted partner for exploring Bali's breathtaking landscapes
