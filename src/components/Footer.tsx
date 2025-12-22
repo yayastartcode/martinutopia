@@ -1,8 +1,15 @@
-import { motion } from 'motion/react'
-import { MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react'
+import { motion } from "motion/react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Facebook,
+  Instagram,
+  Twitter,
+} from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gradient-to-b from-slate-800 to-slate-900 text-white">
@@ -16,9 +23,9 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
           >
             <div className="mb-4">
-              <img 
-                src="/images/ramalg.png" 
-                alt="Ramatur Logo" 
+              <img
+                src="/images/ramalg.png"
+                alt="Ramatur Logo"
                 className="h-16 w-auto object-contain mb-2"
               />
               <p className="text-sm text-slate-300 italic">
@@ -26,7 +33,8 @@ export default function Footer() {
               </p>
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
-              Your trusted partner for exploring Bali's breathtaking landscapes and vibrant culture. Affordable car hire and personalized tours.
+              Your trusted partner for exploring Bali's breathtaking landscapes
+              and vibrant culture. Affordable car hire and personalized tours.
             </p>
           </motion.div>
 
@@ -40,27 +48,42 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors text-sm">
+                <a
+                  href="#"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors text-sm"
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-slate-300 hover:text-emerald-400 transition-colors text-sm">
+                <a
+                  href="#about"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors text-sm"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#car-rental" className="text-slate-300 hover:text-emerald-400 transition-colors text-sm">
+                <a
+                  href="#car-rental"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors text-sm"
+                >
                   Car Rental
                 </a>
               </li>
               <li>
-                <a href="#tour-packages" className="text-slate-300 hover:text-emerald-400 transition-colors text-sm">
+                <a
+                  href="#tour-packages"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors text-sm"
+                >
                   Tour Packages
                 </a>
               </li>
               <li>
-                <a href="#top-destinations" className="text-slate-300 hover:text-emerald-400 transition-colors text-sm">
+                <a
+                  href="#top-destinations"
+                  className="text-slate-300 hover:text-emerald-400 transition-colors text-sm"
+                >
                   Destinations
                 </a>
               </li>
@@ -77,21 +100,30 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin size={18} className="mr-2 mt-1 flex-shrink-0 text-emerald-400" />
+                <MapPin
+                  size={18}
+                  className="mr-2 mt-1 flex-shrink-0 text-emerald-400"
+                />
                 <span className="text-slate-300 text-sm">
                   Ubud, Bali, Indonesia
                 </span>
               </li>
               <li className="flex items-start">
-                <Phone size={18} className="mr-2 mt-1 flex-shrink-0 text-emerald-400" />
+                <Phone
+                  size={18}
+                  className="mr-2 mt-1 flex-shrink-0 text-emerald-400"
+                />
                 <span className="text-slate-300 text-sm">
-                  +62 812 3456 7890
+                  +62 878-4221-6006
                 </span>
               </li>
               <li className="flex items-start">
-                <Mail size={18} className="mr-2 mt-1 flex-shrink-0 text-emerald-400" />
+                <Mail
+                  size={18}
+                  className="mr-2 mt-1 flex-shrink-0 text-emerald-400"
+                />
                 <span className="text-slate-300 text-sm">
-                  info@yourbalivacation.com
+                  321ramawijaya@gmail.com
                 </span>
               </li>
             </ul>
@@ -145,5 +177,5 @@ export default function Footer() {
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }
