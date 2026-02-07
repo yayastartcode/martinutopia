@@ -40,8 +40,8 @@ export default function AboutUs() {
           className="max-w-4xl mx-auto text-center mb-16"
         >
           <p className="text-lg text-slate-700 leading-relaxed">
-            Experience Bali's best with Rama Bali Tour. Affordable car hire and
-            personalized tours to explore Bali's stunning destinations.
+            Experience Nusa Lembongan's best with TANGKAS. Affordable car hire and
+            personalized tours to explore Nusa Lembongan's stunning destinations.
             <br />
             Book now for an unforgettable journey!
           </p>
@@ -106,7 +106,7 @@ export default function AboutUs() {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
-            Book a private car with driver in Bali for a day
+            Book a private taxi with driver in Nusa Lembongan for a day
           </h2>
 
           <p className="text-lg text-slate-700 mb-8 leading-relaxed">
@@ -122,12 +122,7 @@ export default function AboutUs() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mb-8"
           >
-            <p className="text-2xl md:text-3xl font-bold text-emerald-600 mb-2">
-              For Only 38 USD or 600K
-            </p>
-            <p className="text-xl text-blue-600 font-medium">
-              you can go anywhere in areas we coverage!!!
-            </p>
+
           </motion.div>
 
           <motion.div
@@ -148,7 +143,7 @@ export default function AboutUs() {
                 className="flex items-center"
               >
                 <Truck className="mr-2" size={20} />
-                Book Bali Personal Driver
+                Book Personal Taxi Driver
               </a>
             </Button>
           </motion.div>

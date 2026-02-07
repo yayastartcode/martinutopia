@@ -9,8 +9,9 @@ export default function Header() {
 
   const navItems = [
     { name: 'Home', href: '#' },
-    { name: 'Destinations', href: '#destinations' },
     { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Gallery', href: '#gallery' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -26,14 +27,12 @@ export default function Header() {
             className="flex items-center"
           >
             <a href="/" className="flex flex-col items-start">
-              <img 
-                src="/images/ramalg.png" 
-                alt="Ramatur Logo" 
+              <img
+                src="/images/tklg.png"
+                alt="Tangkas Taxi Lembongan"
                 className="h-16 md:h-20 w-auto object-contain"
               />
-              <span className="text-xs md:text-sm text-slate-600 mt-1 italic">
-                Enjoy your holiday with us
-              </span>
+
             </a>
           </motion.div>
 
@@ -56,7 +55,7 @@ export default function Header() {
                 {item.name}
               </motion.a>
             ))}
-            <Button 
+            <Button
               asChild
               className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700"
             >
@@ -95,7 +94,7 @@ export default function Header() {
                 {item.name}
               </a>
             ))}
-            <Button 
+            <Button
               asChild
               className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700"
             >

@@ -7,71 +7,99 @@ import { getWhatsAppUrl, WHATSAPP_MESSAGES } from "@/lib/constants";
 export default function TourPackages() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const packages = [
+  const services = [
     {
       id: 1,
-      title: "Volcano Jeep Adventure and Ubud Tour",
-      location: "Kintamani, Ubud",
-      duration: "10 Hours",
+      title: "Island Tour",
+      location: "Nusa Penida / Lembongan",
+      duration: "Full Day",
       people: "2-6 People",
-      price: 70,
-      image: "/images/rmjeep.webp",
+      image: "/images/rmwesnusa.webp",
       description:
-        "Experience the black lava jeep adventure at the feet of Batur sacred volcano. This...",
+        "Explore the breathtaking views of the islands. Visit iconic spots and enjoy the island vibe.",
       featured: true,
     },
     {
       id: 2,
-      title: "Bali Gate of Heaven Temple Tour",
-      location: "Candidasa, Ubud",
-      duration: "10 Hours",
-      people: "2-6 People",
-      price: 65,
-      image: "/images/rmgate.webp",
+      title: "Snorkeling Trip",
+      location: "Crystal Bay / Manta Point",
+      duration: "4 Hours",
+      people: "2-10 People",
+      image: "/images/snorkeling.png",
       description:
-        "Join this early morning trip to the east side of Bali. Lempuyang Temple is one o...",
-      featured: false,
-    },
-    {
-      id: 3,
-      title: "Best of Ubud Tour with Jungle Swing",
-      location: "Ubud",
-      duration: "10 Hours",
-      people: "2-6 People",
-      price: 50,
-      image: "/images/rmswing.webp",
-      description:
-        "Begin the tour by meeting your driver or tour guide at your hotel lobby with a war...",
+        "Dive into the crystal clear waters and swim with vibrant marine life and coral reefs.",
       featured: true,
     },
     {
-      id: 4,
-      title: "West Nusa Penida Day Tour",
-      location: "Nusa Penida",
-      duration: "10 Hours",
-      people: "2-6 People",
-      price: 65,
-      image: "/images/rmwesnusa.webp",
+      id: 3,
+      title: "Mangrove Tour",
+      location: "Nusa Lembongan",
+      duration: "2 Hours",
+      people: "2-4 People",
+      image: "/images/mangrove.png",
       description:
-        "Experience the most popular day trip to Nusa Penida the sister island of Bali. You will...",
+        "A peaceful boat ride through the lush mangrove forests. serene and close to nature.",
+      featured: false,
+    },
+    {
+      id: 4,
+      title: "Taxi Service",
+      location: "Bali Area",
+      duration: "Flexible",
+      people: "1-4 People",
+      image: "/images/car.jpeg",
+      description:
+        "Reliable taxi service for your transportation needs around Bali. Comfortable and safe.",
       featured: false,
     },
     {
       id: 5,
-      title: "Best of Bali Waterfalls: Tibumana, Tukad Cepung",
-      location: "Ubud",
-      duration: "8 Hours",
-      people: "2-6 People",
-      price: 75,
-      image: "/images/rmwater.webp",
+      title: "Rental Scooter",
+      location: "Bali / Nusa Penida",
+      duration: "Daily",
+      people: "1-2 People",
+      image: "/images/scooter.png",
       description:
-        "Visit three most beautiful waterfalls near to Ubud area. You will be taken to the first...",
+        "Explore the island at your own pace with our well-maintained scooter rentals.",
       featured: false,
+    },
+    {
+      id: 6,
+      title: "Fishing",
+      location: "Open Sea",
+      duration: "4-6 Hours",
+      people: "2-5 People",
+      image: "/images/fishing.png",
+      description:
+        "Experience the thrill of fishing in the deep blue sea. Equipment and guide included.",
+      featured: false,
+    },
+    {
+      id: 7,
+      title: "Ticket Boat To Bali",
+      location: "Sanur / Padang Bai",
+      duration: "45 Mins",
+      people: "1 Person",
+      image: "/images/fastboat_bali.png",
+      description:
+        "Fast boat transfer to Bali mainland. Safe, fast, and comfortable journey.",
+      featured: false,
+    },
+    {
+      id: 8,
+      title: "Ticket Boat To Gili, Lombok",
+      location: "Gili Trawangan / Air / Meno",
+      duration: "1.5 - 2 Hours",
+      people: "1 Person",
+      image: "/images/fastboat_gili.png",
+      description:
+        "Direct fast boat connection to the beautiful Gili islands and Lombok.",
+      featured: true,
     },
   ];
 
   const itemsPerPage = 4;
-  const totalSlides = Math.ceil(packages.length / itemsPerPage);
+  const totalSlides = Math.ceil(services.length / itemsPerPage);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -81,14 +109,14 @@ export default function TourPackages() {
     setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
 
-  const currentPackages = packages.slice(
+  const currentServices = services.slice(
     currentSlide * itemsPerPage,
     (currentSlide + 1) * itemsPerPage
   );
 
   return (
     <section
-      id="tour-packages"
+      id="services"
       className="py-20 bg-gradient-to-b from-slate-50 to-white"
     >
       <div className="container mx-auto px-6">
@@ -101,10 +129,10 @@ export default function TourPackages() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-            Popular Tour Packages
+            Our Services
           </h2>
           <p className="text-lg text-slate-600">
-            Discover the best of Bali with our curated tour packages
+            Explore our wide range of services for your perfect holiday
           </p>
         </motion.div>
 
@@ -141,78 +169,71 @@ export default function TourPackages() {
               transition={{ duration: 0.3 }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
             >
-              {currentPackages.map((pkg, index) => (
+              {currentServices.map((service, index) => (
                 <motion.div
-                  key={pkg.id}
+                  key={service.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="bg-gradient-to-br from-lime-200 to-lime-300 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative"
+                  className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative border border-slate-100"
                 >
                   {/* Featured Badge */}
-                  {pkg.featured && (
+                  {service.featured && (
                     <div className="absolute top-4 right-4 bg-yellow-400 text-slate-800 px-3 py-1 rounded-full text-sm font-medium z-10">
-                      Featured
+                      Top Choice
                     </div>
                   )}
 
                   {/* Image */}
-                  <div className="relative h-48 overflow-hidden m-3 rounded-lg">
+                  <div className="relative h-48 overflow-hidden bg-slate-200">
                     <img
-                      src={pkg.image}
-                      alt={pkg.title}
-                      className="w-full h-full object-cover"
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                     />
                   </div>
 
                   {/* Content */}
                   <div className="p-4">
                     {/* Title */}
-                    <h3 className="text-lg font-semibold text-slate-800 mb-3 min-h-[3.5rem]">
-                      {pkg.title}
+                    <h3 className="text-lg font-bold text-slate-800 mb-3 min-h-[3.5rem] line-clamp-2">
+                      {service.title}
                     </h3>
 
                     {/* Details */}
                     <div className="space-y-2 mb-4">
-                      <div className="flex items-center text-sm text-slate-700">
-                        <MapPin size={16} className="mr-2 flex-shrink-0" />
-                        <span>{pkg.location}</span>
+                      <div className="flex items-center text-sm text-slate-600">
+                        <MapPin size={16} className="mr-2 flex-shrink-0 text-green-600" />
+                        <span className="truncate">{service.location}</span>
                       </div>
-                      <div className="flex items-center text-sm text-slate-700">
-                        <Clock size={16} className="mr-2 flex-shrink-0" />
-                        <span>{pkg.duration}</span>
+                      <div className="flex items-center text-sm text-slate-600">
+                        <Clock size={16} className="mr-2 flex-shrink-0 text-green-600" />
+                        <span>{service.duration}</span>
                       </div>
-                      <div className="flex items-center text-sm text-slate-700">
-                        <Users size={16} className="mr-2 flex-shrink-0" />
-                        <span>{pkg.people}</span>
+                      <div className="flex items-center text-sm text-slate-600">
+                        <Users size={16} className="mr-2 flex-shrink-0 text-green-600" />
+                        <span>{service.people}</span>
                       </div>
-                    </div>
-
-                    {/* Price */}
-                    <div className="mb-4">
-                      <span className="text-3xl font-bold text-red-500">
-                        ${pkg.price}
-                      </span>
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm text-slate-700 mb-4 line-clamp-2 min-h-[2.5rem]">
-                      {pkg.description}
+                    <p className="text-sm text-slate-600 mb-4 line-clamp-2 min-h-[2.5rem]">
+                      {service.description}
                     </p>
 
                     {/* Button */}
                     <Button
                       asChild
-                      className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white"
+                      className="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium"
                     >
                       <a
                         href={getWhatsAppUrl(
-                          WHATSAPP_MESSAGES.tourPackage(pkg.title)
+                          WHATSAPP_MESSAGES.tourPackage(service.title)
                         )}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        VIEW DETAILS
+                        Book Now
                       </a>
                     </Button>
                   </div>
@@ -228,11 +249,10 @@ export default function TourPackages() {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`h-2 rounded-full transition-all ${
-                    currentSlide === index
-                      ? "w-8 bg-slate-800"
-                      : "w-2 bg-slate-300 hover:bg-slate-400"
-                  }`}
+                  className={`h-2 rounded-full transition-all ${currentSlide === index
+                    ? "w-8 bg-slate-800"
+                    : "w-2 bg-slate-300 hover:bg-slate-400"
+                    }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
@@ -243,3 +263,4 @@ export default function TourPackages() {
     </section>
   );
 }
+

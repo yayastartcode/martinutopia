@@ -6,32 +6,14 @@ import { getWhatsAppUrl, WHATSAPP_MESSAGES } from "@/lib/constants";
 export default function CarRental() {
   const vehicles = [
     {
-      title: "Book A Driver + Standard Minivan",
-      model: "TOYOTA AVANZA",
-      price: 38,
+      title: "Book A Driver + Custom Minivan",
+      model: "Suzuki",
+      price: "Call",
       duration: "10 hours/day",
-      image: "/images/avanzarm.webp",
-      capacityAirport: "Max 4 persons with luggage for airport transfer",
+      image: "/images/car.jpeg",
       capacityTour: "Max 5 persons for tour",
     },
-    {
-      title: "Book A Driver + Big Van",
-      model: "TOYOTA HI-ACE",
-      price: 85,
-      duration: "10 hours/day",
-      image: "/images/hiacerm.webp",
-      capacityAirport: "Max 11 persons with luggage for airport transfer",
-      capacityTour: "Max 15 persons for tour",
-    },
-    {
-      title: "Book A Driver + Luxury Car",
-      model: "TOYOTA ALPHARD",
-      price: 162,
-      duration: "10 hours/day",
-      image: "/images/rmalp.webp",
-      capacityAirport: "Max 4 persons with luggage for airport transfer",
-      capacityTour: "Max 6 persons for tour",
-    },
+
   ];
 
   return (
@@ -81,7 +63,7 @@ export default function CarRental() {
 
               {/* Capacity Details */}
               <div className="text-center text-sm text-slate-600 space-y-2 mb-6 min-h-[3rem]">
-                <p>{vehicle.capacityAirport}</p>
+
                 <p>{vehicle.capacityTour}</p>
               </div>
 
@@ -115,10 +97,10 @@ export default function CarRental() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
-            Welcome to Rama Bali Tour,
+            Welcome to TANGKAS,
           </h2>
           <p className="text-lg text-slate-700 leading-relaxed">
-            your trusted partner for exploring Bali's breathtaking landscapes
+            your trusted partner for exploring Nusa Lembongan's breathtaking landscapes
             and vibrant culture. We offer reliable and affordable car hire
             services, as well as personalized tour packages tailored to your
             interests. Whether you're seeking iconic landmarks, hidden gems, or

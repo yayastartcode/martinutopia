@@ -10,8 +10,8 @@ export default function Testimonials() {
       avatar: 'https://i.pravatar.cc/150?img=1',
       rating: 5,
       comment:
-        'Amazing experience! Our driver was incredibly knowledgeable and friendly. We visited the most beautiful waterfalls and temples. Highly recommend this service for anyone visiting Bali!',
-      date: 'November 2024',
+        'Amazing experience! Our driver was incredibly knowledgeable and friendly. We visited the most beautiful beaches. Highly recommend this service for anyone visiting Bali!',
+      date: 'November 2025',
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function Testimonials() {
       rating: 5,
       comment:
         'The Volcano Jeep Adventure was the highlight of our trip! Professional service, comfortable vehicles, and breathtaking views. Worth every penny. Will definitely book again on our next visit.',
-      date: 'October 2024',
+      date: 'October 2025',
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export default function Testimonials() {
       rating: 5,
       comment:
         'Excellent service from start to finish. The jungle swing tour was incredible, and our guide made sure we got the best photos. Very affordable and well-organized. Thank you for the memories!',
-      date: 'December 2024',
+      date: 'December 2025',
     },
   ]
 

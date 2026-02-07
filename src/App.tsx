@@ -3,7 +3,7 @@ import Hero from '@/components/Hero'
 import AboutUs from '@/components/AboutUs'
 import CarRental from '@/components/CarRental'
 import TourPackages from '@/components/TourPackages'
-import TopDestinations from '@/components/TopDestinations'
+import Gallery from '@/components/Gallery'
 import CTASection from '@/components/CTASection'
 import Testimonials from '@/components/Testimonials'
 import Footer from '@/components/Footer'
@@ -17,7 +17,7 @@ function App() {
       <AboutUs />
       <CarRental />
       <TourPackages />
-      <TopDestinations />
+      <Gallery />
       <CTASection />
       <Testimonials />
       <Footer />
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App
+

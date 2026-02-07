@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import {
   MapPin,
   Phone,
-  Mail,
+
   Facebook,
   Instagram,
   Twitter,
@@ -24,16 +24,14 @@ export default function Footer() {
           >
             <div className="mb-4">
               <img
-                src="/images/ramalg.png"
-                alt="Ramatur Logo"
+                src="/images/tklg.png"
+                alt="Tangkas Taxi Lembongan"
                 className="h-16 w-auto object-contain mb-2"
               />
-              <p className="text-sm text-slate-300 italic">
-                Enjoy your holiday with us
-              </p>
+
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
-              Your trusted partner for exploring Bali's breathtaking landscapes
+              Your trusted partner for exploring Nusa Lembongan's breathtaking landscapes
               and vibrant culture. Affordable car hire and personalized tours.
             </p>
           </motion.div>
@@ -105,7 +103,7 @@ export default function Footer() {
                   className="mr-2 mt-1 flex-shrink-0 text-emerald-400"
                 />
                 <span className="text-slate-300 text-sm">
-                  Ubud, Bali, Indonesia
+                  Jungut Batu, Nusa Lembongan,Bali, Indonesia
                 </span>
               </li>
               <li className="flex items-start">
@@ -114,18 +112,10 @@ export default function Footer() {
                   className="mr-2 mt-1 flex-shrink-0 text-emerald-400"
                 />
                 <span className="text-slate-300 text-sm">
-                  +62 878-4221-6006
+                  +62 822-3683-8125
                 </span>
               </li>
-              <li className="flex items-start">
-                <Mail
-                  size={18}
-                  className="mr-2 mt-1 flex-shrink-0 text-emerald-400"
-                />
-                <span className="text-slate-300 text-sm">
-                  321ramawijaya@gmail.com
-                </span>
-              </li>
+
             </ul>
           </motion.div>
 
@@ -172,7 +162,7 @@ export default function Footer() {
           className="border-t border-slate-700 pt-8 text-center"
         >
           <p className="text-slate-400 text-sm">
-            © {currentYear} Your Bali Vacation. All rights reserved.
+            © {currentYear} Tangkas Taxi Service. All rights reserved.
           </p>
         </motion.div>
       </div>

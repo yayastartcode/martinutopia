@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50 z-10" />
         <img
-          src="https://international.unud.ac.id/protected/storage/file_summernote/4a0885ebc3c02b217cbf6c079eca6b37.jpg"
+          src="/images/tkshero.webp"
           alt="Beautiful destination"
           className="w-full h-full object-cover"
         />
@@ -29,7 +29,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold text-white mb-6"
           >
-            Your Ultimate Getaway
+            TANGKAS
           </motion.h1>
 
           <motion.p
@@ -38,7 +38,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-white/90 mb-12"
           >
-            Enjoy Your Holiday With Us
+            is a local tour operator in Jungut Batu, Nusa Lembongan, delivering unforgettable island adventures.
           </motion.p>
 
           <motion.div
