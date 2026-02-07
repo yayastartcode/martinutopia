@@ -6,6 +6,7 @@ import TourPackages from '@/components/TourPackages'
 import Gallery from '@/components/Gallery'
 import CTASection from '@/components/CTASection'
 import Testimonials from '@/components/Testimonials'
+import MapSection from '@/components/MapSection'
 import Footer from '@/components/Footer'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
 
@@ -20,6 +21,7 @@ function App() {
       <Gallery />
       <CTASection />
       <Testimonials />
+      <MapSection />
       <Footer />
       <WhatsAppFloat />
     </div>
@@ -27,4 +29,5 @@ function App() {
 }
 
 export default App
+
 
