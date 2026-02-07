@@ -12,7 +12,7 @@ export default function TourPackages() {
       id: 1,
       title: "Island Tour",
       location: "Nusa Penida / Lembongan",
-      duration: "Full Day",
+      duration: "3 hours",
       people: "2-6 People",
       image: "/images/rmwesnusa.webp",
       description:
@@ -22,8 +22,8 @@ export default function TourPackages() {
     {
       id: 2,
       title: "Snorkeling Trip",
-      location: "Crystal Bay / Manta Point",
-      duration: "4 Hours",
+      location: "Crystal bay/Manta Bay Dan Gamat Bay",
+      duration: "3 Hours",
       people: "2-10 People",
       image: "/images/snorkeling.png",
       description:
@@ -34,7 +34,7 @@ export default function TourPackages() {
       id: 3,
       title: "Mangrove Tour",
       location: "Nusa Lembongan",
-      duration: "2 Hours",
+      duration: "30 minutes",
       people: "2-4 People",
       image: "/images/mangrove.png",
       description:
@@ -67,7 +67,7 @@ export default function TourPackages() {
       id: 6,
       title: "Fishing",
       location: "Open Sea",
-      duration: "4-6 Hours",
+      duration: "3 Hours",
       people: "2-5 People",
       image: "/images/fishing.png",
       description:
