@@ -4,30 +4,46 @@ import { getWhatsAppUrl, WHATSAPP_MESSAGES } from '@/lib/constants'
 
 export default function WhatsAppFloat() {
   return (
-    <motion.a
-      href={getWhatsAppUrl(WHATSAPP_MESSAGES.general)}
-      target="_blank"
-      rel="noopener noreferrer"
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.5, delay: 1 }}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#1ebe5d] text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all group"
-      aria-label="Chat on WhatsApp"
-    >
-      <FaWhatsapp size={32} />
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-4">
+      <motion.a
+        href={getWhatsAppUrl(WHATSAPP_MESSAGES.general)}
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="bg-[#25D366] hover:bg-[#1ebe5d] text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all group relative"
+        aria-label="Chat on WhatsApp"
+      >
+        <FaWhatsapp size={32} />
 
-      {/* Tooltip */}
-      <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-slate-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-        Chat with us on WhatsApp
-      </span>
+        {/* Tooltip */}
+        <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-slate-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+          Chat with us on WhatsApp
+        </span>
 
-      {/* Notification Badge */}
-      <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center animate-bounce">
-        1
-      </span>
-    </motion.a>
+        {/* Notification Badge */}
+        <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center animate-bounce">
+          1
+        </span>
+      </motion.a>
+
+      {/* QR Code */}
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1.2 }}
+        className="bg-white p-2 rounded-lg shadow-lg"
+      >
+        <img
+          src="/images/wabar.png"
+          alt="WhatsApp QR Code"
+          className="w-32 h-32 object-contain"
+        />
+      </motion.div>
+    </div>
   )
 }
 
