@@ -28,7 +28,7 @@ export default function Header() {
           >
             <a href="/" className="flex flex-col items-start">
               <img
-                src="/images/tklg.png"
+                src="/images/utolg.png"
                 alt="Tangkas Taxi Lembongan"
                 className="h-16 md:h-20 w-auto object-contain"
               />

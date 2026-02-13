@@ -15,21 +15,21 @@ export default function MapSection() {
                     Find Us
                 </h2>
                 <p className="text-lg text-slate-300">
-                    Visit us at Jungut Batu, Nusa Lembongan
+                    Sanding, Kabupaten Gianyar, Bali
                 </p>
             </motion.div>
 
             {/* Full Width Map */}
             <div className="w-full h-[400px] md:h-[500px]">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31552.66041166587!2d115.432148!3d-8.6836998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6a2d95f1b9f3d6cf%3A0xb69c75c8ec2d9a60!2sTangkas%20Taxi%20Lembongan%20%26%20Island%20Tour!5e0!3m2!1sid!2sid!4v1770472217860!5m2!1sid!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3946.4007745633644!2d115.29307907501226!3d-8.460349991579996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjcnMzcuMyJTIDExNcKwMTcnNDQuNCJF!5e0!3m2!1sid!2sid!4v1770967572793!5m2!1sid!2sid"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Tangkas Taxi Lembongan Location"
+                    title="Martin Tour and Travel Utopia"
                 />
             </div>
         </section>

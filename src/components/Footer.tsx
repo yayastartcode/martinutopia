@@ -24,14 +24,14 @@ export default function Footer() {
           >
             <div className="mb-4">
               <img
-                src="/images/tklg.png"
-                alt="Tangkas Taxi Lembongan"
+                src="/images/utolg.png"
+                alt="Ubud Taxi Bali"
                 className="h-16 w-auto object-contain mb-2"
               />
 
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
-              Your trusted partner for exploring Nusa Lembongan's breathtaking landscapes
+              Your trusted partner for exploring Bali's  breathtaking landscapes
               and vibrant culture. Affordable car hire and personalized tours.
             </p>
           </motion.div>
@@ -103,7 +103,7 @@ export default function Footer() {
                   className="mr-2 mt-1 flex-shrink-0 text-emerald-400"
                 />
                 <span className="text-slate-300 text-sm">
-                  Jungut Batu, Nusa Lembongan,Bali, Indonesia
+                  Sanding, Kabupaten Gianyar, Bali
                 </span>
               </li>
               <li className="flex items-start">
@@ -112,7 +112,7 @@ export default function Footer() {
                   className="mr-2 mt-1 flex-shrink-0 text-emerald-400"
                 />
                 <span className="text-slate-300 text-sm">
-                  +62 822-3683-8125
+                  +62 823-4087-6168
                 </span>
               </li>
 
@@ -162,7 +162,7 @@ export default function Footer() {
           className="border-t border-slate-700 pt-8 text-center"
         >
           <p className="text-slate-400 text-sm">
-            © {currentYear} Tangkas Taxi Service. All rights reserved.
+            © {currentYear} Martin Tour and Travel Utopia. All rights reserved.
           </p>
         </motion.div>
       </div>

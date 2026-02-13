@@ -6,14 +6,37 @@ import { getWhatsAppUrl, WHATSAPP_MESSAGES } from "@/lib/constants";
 export default function CarRental() {
   const vehicles = [
     {
-      title: "Book A Driver + Custom Minivan",
-      model: "Suzuki",
+      title: "Veloz",
+      model: "Toyota",
       price: "Call",
       duration: "10 hours/day",
-      image: "/images/car.jpeg",
+      image: "https://d1g6w7sntckt92.cloudfront.net/public/images/color_option_images/cL2E3JM0fJHKmUIlCXPQHunnNfE46XTVLEbqXME5.png",
       capacityTour: "Max 5 persons for tour",
     },
-
+    {
+      title: "Toyota Avanza",
+      model: "Avanza",
+      price: "Call",
+      duration: "10 hours/day",
+      image: "/images/avanzarm.webp",
+      capacityTour: "Max 6 persons",
+    },
+    {
+      title: "Toyota Hiace",
+      model: "Hiace",
+      price: "Call",
+      duration: "10 hours/day",
+      image: "/images/hiacerm.webp",
+      capacityTour: "Max 12-14 persons",
+    },
+    {
+      title: "Suzuki Ertiga",
+      model: "Ertiga",
+      price: "Call",
+      duration: "10 hours/day",
+      image: "https://cms.suzukihyperlocal.com/read-file?path=images/car-color/1/Metalic-Magma-Gray-Primary-ALL_NEW_ERTIGA.webp",
+      capacityTour: "Max 6 persons",
+    },
   ];
 
   return (
@@ -97,10 +120,10 @@ export default function CarRental() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
-            Welcome to TANGKAS,
+            Welcome to Martin Bali Utopia Tour & Travel,
           </h2>
           <p className="text-lg text-slate-700 leading-relaxed">
-            your trusted partner for exploring Nusa Lembongan's breathtaking landscapes
+            your trusted partner for exploring Bali's breathtaking landscapes
             and vibrant culture. We offer reliable and affordable car hire
             services, as well as personalized tour packages tailored to your
             interests. Whether you're seeking iconic landmarks, hidden gems, or

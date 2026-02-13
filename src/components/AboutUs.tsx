@@ -40,8 +40,8 @@ export default function AboutUs() {
           className="max-w-4xl mx-auto text-center mb-16"
         >
           <p className="text-lg text-slate-700 leading-relaxed">
-            Experience Nusa Lembongan's best with TANGKAS. Affordable car hire and
-            personalized tours to explore Nusa Lembongan's stunning destinations.
+            Experience Bali's best with Martin Bali Utopia Tour & Travel. Affordable car hire and
+            personalized tours to explore Bali's stunning destinations.
             <br />
             Book now for an unforgettable journey!
           </p>
@@ -106,7 +106,7 @@ export default function AboutUs() {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
-            Book a private taxi with driver in Nusa Lembongan for a day
+            Book a private taxi with driver in Bali for a day
           </h2>
 
           <p className="text-lg text-slate-700 mb-8 leading-relaxed">
@@ -143,7 +143,7 @@ export default function AboutUs() {
                 className="flex items-center"
               >
                 <Truck className="mr-2" size={20} />
-                Book Personal Taxi Driver
+                Book Personal Driver
               </a>
             </Button>
           </motion.div>
