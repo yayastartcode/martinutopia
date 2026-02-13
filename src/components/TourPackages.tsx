@@ -14,7 +14,7 @@ export default function TourPackages() {
       location: "Kintamani, Ubud",
       duration: "10 Hours",
       people: "2-6 People",
-      price: 70,
+      price: "Call",
       image: "/images/rmjeep.webp",
       description:
         "Experience the black lava jeep adventure at the feet of Batur sacred volcano. This...",
@@ -26,7 +26,7 @@ export default function TourPackages() {
       location: "Candidasa, Ubud",
       duration: "10 Hours",
       people: "2-6 People",
-      price: 65,
+      price: "Call",
       image: "/images/rmgate.webp",
       description:
         "Join this early morning trip to the east side of Bali. Lempuyang Temple is one o...",
@@ -38,7 +38,7 @@ export default function TourPackages() {
       location: "Ubud",
       duration: "10 Hours",
       people: "2-6 People",
-      price: 50,
+      price: "Call",
       image: "/images/rmswing.webp",
       description:
         "Begin the tour by meeting your driver or tour guide at your hotel lobby with a war...",
@@ -50,7 +50,7 @@ export default function TourPackages() {
       location: "Nusa Penida",
       duration: "10 Hours",
       people: "2-6 People",
-      price: 65,
+      price: "Call",
       image: "/images/rmwesnusa.webp",
       description:
         "Experience the most popular day trip to Nusa Penida the sister island of Bali. You will...",
@@ -62,10 +62,34 @@ export default function TourPackages() {
       location: "Ubud",
       duration: "8 Hours",
       people: "2-6 People",
-      price: 75,
+      price: "Call",
       image: "/images/rmwater.webp",
       description:
         "Visit three most beautiful waterfalls near to Ubud area. You will be taken to the first...",
+      featured: false,
+    },
+    {
+      id: 6,
+      title: "Uluwatu Temple",
+      location: "Uluwatu",
+      duration: "8 Hours",
+      people: "2-6 People",
+      price: "Call",
+      image: "https://yachtsourcing.com/wp-content/uploads/DJI_0377_1300-1024x683.jpg",
+      description:
+        "Visit the beautiful Uluwatu Temple in the sunset",
+      featured: false,
+    },
+    {
+      id: 7,
+      title: "Ulun Danu Beratan Temple",
+      location: "Bedugul",
+      duration: "8 Hours",
+      people: "2-6 People",
+      price: "Call",
+      image: "https://ik.imagekit.io/tvlk/blog/2024/08/viMotN3a-image-3.png?tr=q-70,c-at_max,w-1000,h-600",
+      description:
+        "Beautiful temple in the lake bedugul",
       featured: false,
     },
   ];
